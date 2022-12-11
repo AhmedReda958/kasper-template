@@ -382,3 +382,123 @@ header nav ul a:hover {
   }
 }
 /* end desing section */
+/* start portfolio section */
+.portfolio {
+  padding: var(--section-padding) 0;
+}
+.portfolio .shuffle {
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .shuffle li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.portfolio .shuffle li.active {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.portfolio .images-containter {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio .box {
+  flex-basis: 25%;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio .box img {
+  max-width: 100%;
+  transition: 0.3s;
+}
+.portfolio .box:hover img {
+  transform: rotate(3deg) scale(1.1);
+}
+
+.portfolio .box .caption {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  background-color: white;
+  bottom: -100%;
+  left: 0;
+  transition: 0.3s;
+}
+.portfolio .box .caption h4 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.portfolio .box .caption p {
+  color: var(--main-color);
+}
+
+.portfolio .box:hover .caption {
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .portfolio .images-containter .box {
+    flex-basis: 50%;
+  }
+}
+.portfolio .more {
+  color: white;
+  background-color: var(--main-color);
+  text-transform: uppercase;
+  display: block;
+  margin: 30px auto;
+  padding: 15px 20px;
+  text-decoration: none;
+  width: fit-content;
+}
+/* end portfolio section */
+
+/* start video section */
+.video {
+  position: relative;
+}
+.video::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(0 0 0 / 60%);
+}
+.video video {
+  width: 100%;
+}
+.video .text {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--transparant-color);
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 50px;
+  z-index: 2;
+}
+.video .text h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.video .text a {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  margin-top: 30px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: black;
+  padding: 10px 20px;
+}
+/* end video section */
