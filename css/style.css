@@ -575,3 +575,126 @@ header nav ul a:hover {
   }
 }
 /* end stats section */
+/* start skills section */
+.our-siklls {
+  padding: var(--section-padding) 0;
+}
+.our-siklls .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.our-siklls .container > div {
+  flex-basis: 45%;
+}
+@media (max-width: 992px) {
+  .our-siklls .container {
+    flex-direction: column;
+  }
+  .our-siklls .container > div {
+    flex-basis: 100%;
+  }
+}
+.our-siklls .heading h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.our-siklls .heading p {
+  line-height: 2;
+  text-align: center;
+  color: #777;
+  margin-bottom: 60px;
+}
+
+.testimonials .bullets {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.testimonials .bullets li {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+.testimonials .bullets li.active {
+  border: none;
+  background-color: var(--main-color);
+}
+
+.testimonials .content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.testimonials .content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+.testimonials .content .text {
+  border-bottom: 1px solid #ccc;
+  line-height: 1.8;
+}
+.testimonials .content .text p {
+  text-align: right;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .testimonials .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .testimonials .content img {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+.prog-holder {
+  margin-bottom: 40px;
+}
+.prog-holder h4 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.prog-holder .prog {
+  width: 100%;
+  background-color: #dedadc;
+}
+.prog-holder .prog .bar {
+  height: 30px;
+  background-color: var(--main-color);
+  position: relative;
+}
+.prog-holder .prog .bar::before {
+  content: attr(data-porgress);
+  position: absolute;
+  top: -40px;
+  right: -18px;
+  width: 40px;
+  padding: 4px 0;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.prog-holder .prog .bar::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: -8px;
+  border: 8px solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* end skills section */
